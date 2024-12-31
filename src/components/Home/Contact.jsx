@@ -124,7 +124,7 @@ function Contact() {
       </section>
 
       {/** latest works */}
-      <section className="absolute bottom-16 left-[45%]">
+      <section className="absolute bottom-12 left-[47%]">
         <button className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110">
           Latest Works
           <FontAwesomeIcon
