@@ -3,15 +3,15 @@ import logo from "../../assets/images/logo.png";
 function Header() {
   return (
     <header>
-      <div className="flex items-center justify-between min-h-20 max-w-screen-xl mx-auto text-white px-10">
-        <div className="z-10">
+      <div className="flex flex-wrap items-center justify-between min-h-20 max-w-screen-xl mx-auto text-white px-6 sm:px-10">
+        <div className="z-10 flex-shrink-0">
           <img
             src={logo}
             alt="logo"
             className="w-14 h-14 pointer-events-none"
           />
         </div>
-        <div className="flex items-center gap-8 ">
+        <div className="flex items-center gap-6 sm:gap-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -19,9 +19,9 @@ function Header() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="z-10 w-8 text-slate-300 hover:text-white transform transition duration-300 hover:scale-110"
           >
             <circle cx="12" cy="12" r="5"></circle>
@@ -42,10 +42,10 @@ function Header() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="z-10 hidden w-8 text-slate-300 hover:text-white transform transition duration-300 hover:scale-110"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="z-10 hidden sm:block w-8 text-slate-300 hover:text-white transform transition duration-300 hover:scale-110"
           >
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>

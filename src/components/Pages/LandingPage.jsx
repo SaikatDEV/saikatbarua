@@ -25,7 +25,7 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="bg-[#111] min-h-80 sm:min-h-[80vh] w-full">
+    <div className="bg-[#111] sm:min-h-[80vh] sm:w-full w-[100vw] overflow-x-hidden">
       <Header></Header>
       <div
         className="absolute w-full h-[100vh] inset-0"
