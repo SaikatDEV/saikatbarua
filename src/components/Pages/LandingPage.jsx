@@ -25,12 +25,15 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="bg-[#111] min-h-80 sm:min-h-[80vh] w-full">
+    <div className="bg-[#111] min-h-[80vh] w-auto">
       <Header></Header>
+
+      {/* Wrapper Canvas for Matter.js */}
       <div
         className="absolute w-full h-[100vh] inset-0"
         id="wrapper-canvas"
       ></div>
+
       <Contact></Contact>
     </div>
   );

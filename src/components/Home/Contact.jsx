@@ -5,9 +5,9 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
-    <div className="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-[100vh] font-['Nunito']">
+    <div className="h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full font-['Nunito']">
       {/** links */}
-      <ul className="z-10 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300 max-w-screen-xl">
+      <ul className="z-10 ml-40 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300 max-w-screen-xl">
         <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
           <a
             href="https://www.linkedin.com/in/saikat-barua-mcitp-icp-csm/"
