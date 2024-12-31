@@ -1,25 +1,37 @@
 var m; // Declare m globally
 
-var canvasWrapper = document.querySelector("#wrapper-canvas");
+// Polling function to check for canvas existence
+function waitForCanvas() {
+  var canvasWrapper = document.querySelector("#wrapper-canvas");
 
-// Create the canvas dynamically if it doesn't exist
-if (!canvasWrapper) {
-  console.error("Canvas wrapper not found, creating dynamically...");
-  canvasWrapper = document.createElement("div");
-  canvasWrapper.id = "wrapper-canvas";
-  document.body.appendChild(canvasWrapper);
+  if (canvasWrapper) {
+    console.log("Canvas found, starting Matter.js...");
+    runMatter();
+  } else {
+    console.warn("Canvas not found, retrying in 200ms...");
+    setTimeout(waitForCanvas, 200); // Retry after 200ms
+  }
 }
-
-var dimensions = {
-  width: window.innerWidth,
-  height: window.innerHeight,
-};
 
 // Ensure Matter plugins are loaded
 Matter.use("matter-attractors");
 Matter.use("matter-wrap");
 
 function runMatter() {
+  var canvasWrapper = document.querySelector("#wrapper-canvas");
+
+  if (!canvasWrapper) {
+    console.error("Canvas wrapper not found, creating dynamically...");
+    canvasWrapper = document.createElement("div");
+    canvasWrapper.id = "wrapper-canvas";
+    document.body.appendChild(canvasWrapper);
+  }
+
+  var dimensions = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  };
+
   var Engine = Matter.Engine,
     Events = Matter.Events,
     Runner = Matter.Runner,
@@ -36,7 +48,6 @@ function runMatter() {
   engine.world.gravity.x = 0;
   engine.world.gravity.scale = 0.1;
 
-  // Clear existing canvas to prevent overlap
   if (canvasWrapper.querySelector("canvas")) {
     canvasWrapper.innerHTML = "";
   }
@@ -129,14 +140,6 @@ function runMatter() {
     runner,
     render,
     canvas: render.canvas,
-    stop: function () {
-      Matter.Render.stop(render);
-      Matter.Runner.stop(runner);
-    },
-    play: function () {
-      Matter.Runner.run(runner, engine);
-      Matter.Render.run(render);
-    },
   };
 }
 
@@ -170,13 +173,10 @@ function setWindowSize() {
   }
 }
 
-// Expose runMatter to the window object for React to access
-window.runMatter = runMatter;
-
-document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector("#wrapper-canvas")) {
-    runMatter();
-  }
-});
+// Expose runMatter to window for React
+window.runMatter = waitForCanvas;
 
 window.addEventListener("resize", debounce(setWindowSize, 250));
+
+// Trigger the canvas check when DOM is ready
+document.addEventListener("DOMContentLoaded", waitForCanvas);
