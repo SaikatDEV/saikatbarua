@@ -6,6 +6,7 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <div className="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-[100vh] font-['Nunito']">
+      {/** links */}
       <ul className="z-10 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300 max-w-screen-xl">
         <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
           <a
@@ -91,7 +92,8 @@ function Contact() {
         </li>
       </ul>
 
-      <div className="flex flex-col sm:flex-row items-center relative left-[15%]">
+      {/** About me */}
+      <section className="flex flex-col sm:flex-row items-center relative left-[15%]">
         <div className="ml-40">
           <img
             src={sblogo}
@@ -119,8 +121,10 @@ function Contact() {
             </button>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-16 left-[45%]">
+      </section>
+
+      {/** latest works */}
+      <section className="absolute bottom-16 left-[45%]">
         <button className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110">
           Latest Works
           <FontAwesomeIcon
@@ -128,7 +132,7 @@ function Contact() {
             className="text-3xl translate-y-8 transform transition duration-200 group-hover:translate-y-12"
           />
         </button>
-      </div>
+      </section>
     </div>
   );
 }
