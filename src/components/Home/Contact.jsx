@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
       {/** links */}
-      <ul className="z-10 ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
+      <ul className="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
         <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
           <a
             href="https://www.linkedin.com/in/saikat-barua-mcitp-icp-csm/"
@@ -94,7 +94,7 @@ function Contact() {
 
       {/** About me */}
       <section className="flex flex-col sm:flex-row items-center relative left-[15%]">
-        <div className="ml-40">
+        <div className="ml-0 sm:ml-40">
           <img
             src={sblogo}
             alt="Logo"
@@ -124,7 +124,7 @@ function Contact() {
       </section>
 
       {/** latest works */}
-      <section className="absolute bottom-12 left-[47%]">
+      <section className="absolute bottom-12 left-[23%] sm:left-[47%]">
         <button className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110">
           Latest Works
           <FontAwesomeIcon

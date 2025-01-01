@@ -610,6 +610,18 @@ video {
   bottom: 3rem;
 }
 
+.left-\[20\%\] {
+  left: 20%;
+}
+
+.left-\[25\%\] {
+  left: 25%;
+}
+
+.left-\[23\%\] {
+  left: 23%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -643,6 +655,30 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .flex {
   display: flex;
 }
@@ -663,6 +699,10 @@ video {
   height: 92vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-20 {
   min-height: 5rem;
 }
@@ -677,6 +717,22 @@ video {
 
 .min-h-\[10vh\] {
   min-height: 10vh;
+}
+
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
+
+.min-h-\[20vh\] {
+  min-height: 20vh;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-14 {
@@ -790,6 +846,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-md {
@@ -945,6 +1005,10 @@ video {
 @media (min-width: 640px) {
   .sm\:left-\[15\%\] {
     left: 15%;
+  }
+
+  .sm\:left-\[47\%\] {
+    left: 47%;
   }
 
   .sm\:mb-\[450px\] {
