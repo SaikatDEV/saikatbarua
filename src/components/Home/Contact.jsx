@@ -108,7 +108,7 @@ function Contact() {
       </ul>
 
       {/** About me */}
-      <section className="flex flex-col sm:flex-row items-center relative left-[15%]">
+      <section className="flex flex-col sm:flex-row items-center relative left-[10%]">
         <div className="ml-0 sm:ml-40 ">
           <img
             src={sblogo}
@@ -142,7 +142,7 @@ function Contact() {
       </section>
 
       {/** latest works */}
-      <section className="absolute bottom-12 left-[23%] sm:left-[47%]">
+      <div className="w-max mx-auto mt-80 sm:mt-0 sm:-translate-y-12">
         <button className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110">
           Latest Works
           <FontAwesomeIcon
@@ -150,7 +150,7 @@ function Contact() {
             className="text-3xl translate-y-8 transform transition duration-200 group-hover:translate-y-12"
           />
         </button>
-      </section>
+      </div>
 
       {/* Modal Popup */}
       <PopModal isOpen={isModalOpen} onClose={toggleModal} />
