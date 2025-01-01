@@ -98,14 +98,15 @@ function runMatter() {
 
   World.add(world, attractiveBody);
 
-  for (var i = 0; i < 60; i += 1) {
+  for (var i = 0; i < 160; i += 1) {
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     let s =
       Common.random() > 0.6 ? Common.random(10, 80) : Common.random(4, 60);
     let polygonNumber = Common.random(3, 6);
 
-    let colors = ["#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93"];
+    // let colors = ["#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93"];
+    let colors = ["#2e2a2b", "#3b372f", "#2c3027", "#3c4043", "#2b292f"];
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
 
     var body = Bodies.polygon(x, y, polygonNumber, s, {

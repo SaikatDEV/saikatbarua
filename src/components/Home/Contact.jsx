@@ -8,7 +8,7 @@ function Contact() {
     <div className="h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
       {/** links */}
       <ul className="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
-        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
+        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
           <a
             href="https://www.linkedin.com/in/saikat-barua-mcitp-icp-csm/"
             target="_blank"
@@ -23,7 +23,7 @@ function Contact() {
           </a>
         </li>
 
-        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
+        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
           <a
             href="https://github.com/SaikatDEV"
             target="_blank"
@@ -38,7 +38,7 @@ function Contact() {
           </a>
         </li>
 
-        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
+        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
           <a
             href="https://stackoverflow.com/users/3434387/saikat"
             target="_blank"
@@ -57,7 +57,7 @@ function Contact() {
           </a>
         </li>
 
-        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
+        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
           <a href="mailto:devsaikat00@gmail.com" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
@@ -68,7 +68,7 @@ function Contact() {
           </a>
         </li>
 
-        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-110">
+        <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
           <a>
             <svg
               aria-hidden="true"
