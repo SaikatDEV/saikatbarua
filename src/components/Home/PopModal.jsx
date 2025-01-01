@@ -52,7 +52,7 @@ function PopModal({ isOpen, onClose }) {
         </button>
 
         {/* Main Modal Content Section */}
-        <div className="flex flex-col sm:flex-row items-center gap-8 pt-64 sm:pt-0">
+        <div className="flex flex-col sm:flex-row items-center gap-8 pt-4 sm:pt-0 overflow-y-scroll max-h-[80vh]">
           {/* Profile Picture Section */}
           <div className="w-32 h-32 sm:w-48 sm:h-48 flex-shrink-0 rounded-full overflow-hidden border-4 border-[#4b5563]">
             <img
