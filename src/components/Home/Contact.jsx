@@ -1,9 +1,17 @@
+import React, { useState } from "react";
 import sblogo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
+import PopModal from "./PopModal";
 
 function Contact() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div className="h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
       {/** links */}
@@ -58,7 +66,11 @@ function Contact() {
         </li>
 
         <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
-          <a href="mailto:devsaikat00@gmail.com" rel="noopener noreferrer">
+          <a
+            href="mailto:devsaikat00@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 fill="currentColor"
@@ -69,7 +81,7 @@ function Contact() {
         </li>
 
         <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
-          <a>
+          <a href="https://t.me/saikatdev00" target="_blank">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -112,7 +124,10 @@ function Contact() {
             </h3>
           </div>
           <div className="flex flex-col sm:flex-col gap-32 items-center">
-            <button className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110">
+            <button
+              className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110"
+              onClick={toggleModal}
+            >
               About Me
               <FontAwesomeIcon
                 icon={faArrowRightLong}
@@ -133,6 +148,9 @@ function Contact() {
           />
         </button>
       </section>
+
+      {/* Modal Popup */}
+      <PopModal isOpen={isModalOpen} onClose={toggleModal} />
     </div>
   );
 }
