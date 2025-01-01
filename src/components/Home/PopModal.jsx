@@ -18,13 +18,10 @@ function PopModal({ isOpen, onClose }) {
   }, [isOpen]); // Depend on isOpen to trigger effect
 
   return (
+    // Backdrop and Modal Wrapper
     // The modal uses scale and opacity for smooth opening/closing animations.
     // A bg-black bg-opacity-50 layer creates a dark overlay behind the modal.
     // Background overlay for modal (dark transparent backdrop)
-    // w-11/12 for mobile (almost full width)
-    // sm:w-4/5 for tablets
-    // lg:w-3/5 for desktops
-    // xl:w-1/2 for large screens
     <div
       className={`fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -34,6 +31,10 @@ function PopModal({ isOpen, onClose }) {
       {/* Modal Container - Responsive width and centered position
         Clicking the outer div (inset-0) triggers the onClose function.
         stopPropagation() prevents the modal from closing when clicking inside the content area. 
+        w-11/12 for mobile (almost full width)
+        sm:w-4/5 for tablets
+        lg:w-3/5 for desktops
+        xl:w-1/2 for large screens
         */}
       <div
         className={`bg-[#1f2937] p-8 rounded-lg w-10/12 sm:w-4/5 lg:w-3/5 xl:w-1/2 relative transform transition-all duration-300 ${
@@ -72,8 +73,7 @@ function PopModal({ isOpen, onClose }) {
               Web Development. As well expert on designing Test Automation
               Framework from scratch using Selenium or any other framework like
               GEB-Spock, Cucumber BDD, Serenity-BDD, PlayWright, Karate, Rspec,
-              TestNG, RestAssured API, Jmeter etc. <br /> I help business owners
-              to design & develop creative websites that fit their vision.
+              TestNG, RestAssured API, Jmeter etc. <br /> <br />
               Technologies and tools that I use to create websites.
             </p>
 

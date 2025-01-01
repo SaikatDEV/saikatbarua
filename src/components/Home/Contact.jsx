@@ -6,8 +6,11 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import PopModal from "./PopModal";
 
 function Contact() {
+  // This state is for modal open or close
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // We always need a event handler while there is any action happens,
+  // And this will update states for that action.
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
