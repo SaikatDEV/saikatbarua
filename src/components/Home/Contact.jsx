@@ -106,11 +106,11 @@ function Contact() {
 
       {/** About me */}
       <section className="flex flex-col sm:flex-row items-center relative left-[15%]">
-        <div className="ml-0 sm:ml-40">
+        <div className="ml-0 sm:ml-40 ">
           <img
             src={sblogo}
             alt="Logo"
-            className="pointer-events-none w-32 sm:w-full sm:min-w-60 lg:min-w-96 sm:-translate-y-1/3 sm:translate-x-1/3  max-sm:-translate-y-[20vh]"
+            className="hidden sm:block pointer-events-none w-32 sm:w-full sm:min-w-60 lg:min-w-96 sm:-translate-y-1/3 sm:translate-x-1/3  max-sm:-translate-y-[20vh]"
           />
         </div>
 
