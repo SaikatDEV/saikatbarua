@@ -185,7 +185,7 @@ function Contact() {
           >
             <img
               class="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200"
-              src="/src/assets/images/macbook 1.png"
+              src="/src/assets/images/macbook1.png"
               alt=""
             />
           </a>
@@ -266,7 +266,7 @@ function Contact() {
           <a href="#" class="w-full">
             <img
               class="max-w-[400px] ml-auto hover:scale-110 ease-in-out duration-200"
-              src="/src/assets/images/macbook 2.png"
+              src="/src/assets/images/macbook2.png"
               alt=""
             />
           </a>
@@ -277,7 +277,7 @@ function Contact() {
           <a href="#" class="w-full" target="_blank">
             <img
               class="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200"
-              src="/src/assets/images/macbook 1.png"
+              src="/src/assets/images/macbook1.png"
               alt=""
             />
           </a>
