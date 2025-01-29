@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo.png";
 
 function Header() {
   return (
-    <header>
+    <header className="bg-[#111]">
       <div className="flex flex-wrap items-center justify-between min-h-20 max-w-screen-xl mx-auto text-white px-6 sm:px-10">
         <div className="z-10 flex-shrink-0">
           <img

@@ -5,7 +5,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import PopModal from "./PopModal";
 
-function Contact() {
+function LatestWorks() {
   // This state is for modal open or close
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -25,7 +25,8 @@ function Contact() {
 
   return (
     <>
-      <div className="h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
+      {/**This is the linkedin, github, stackoverflow section */}
+      <div className="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
         {/** links */}
         <ul className="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
           <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
@@ -42,7 +43,6 @@ function Contact() {
               </svg>
             </a>
           </li>
-
           <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="https://github.com/SaikatDEV"
@@ -57,7 +57,7 @@ function Contact() {
               </svg>
             </a>
           </li>
-
+          {/**Stackoverflow Icon*/}
           <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="https://stackoverflow.com/users/3434387/saikat"
@@ -76,7 +76,7 @@ function Contact() {
               </svg>
             </a>
           </li>
-
+          {/**Mail Icon*/}
           <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="mailto:devsaikat00@gmail.com"
@@ -91,7 +91,6 @@ function Contact() {
               </svg>
             </a>
           </li>
-
           <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a href="https://t.me/saikatdev00" target="_blank">
               <svg
@@ -151,17 +150,14 @@ function Contact() {
         </section>
 
         {/** latest works */}
-        <div className="w-max mx-auto mt-80 sm:mt-0 sm:-translate-y-12 lg:-translate-y-20">
+        <div className="w-max mx-auto mt-80 sm:mt-0 sm:-translate-y-12 lg:-translate-y-20 flex flex-col items-center">
           <button
             className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110"
             onClick={scrollToLatestWorks}
           >
             Latest Works
-            <FontAwesomeIcon
-              icon={faArrowDownLong}
-              className="text-3xl translate-y-8 transform transition duration-200 group-hover:translate-y-12"
-            />
           </button>
+          <FontAwesomeIcon icon={faArrowDownLong} className="text-3xl mt-4" />
         </div>
 
         {/* Modal Popup */}
@@ -170,31 +166,35 @@ function Contact() {
       {/**This is the latest work section */}
       <section
         id="latestWorks"
-        class="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44"
+        className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44"
       >
         {/* <h2 class="text-4xl w-max mx-auto text-center text-[#1788ae] border-b-2 border-[#1788ae]">
           Latest Works
         </h2> */}
 
         {/** This is the buddhist Campus Website*/}
-        <div class="flex gap-[80px] items-center mt-12">
+        <div className="flex gap-[80px] items-center mt-12">
           <a
             href="https://buddhistcampus.netlify.app/"
-            class="w-full"
+            className="w-full"
             target="_blank"
           >
             <img
-              class="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200"
+              className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
               src="/src/assets/images/macbook1.png"
               alt=""
             />
           </a>
-          <div class="w-full">
+          <div className="w-full">
             <a href="https://buddhistcampus.netlify.app/" target="_blank">
-              <h3 class="text-[#fc815c] font-bold text-4xl">Buddhist Campus</h3>
+              <h3 className="text-[#fc815c] font-bold text-4xl">
+                Buddhist Campus
+              </h3>
             </a>
-            <span class="text-[#fc815c] text-lg">(A Path to Better Life)</span>
-            <p class="text-justify my-4">
+            <span className="text-[#fc815c] text-lg">
+              (A Path to Better Life)
+            </span>
+            <p className="text-justify my-4">
               Welcome to Path to Better Life, your comprehensive hub for all
               things related to Buddhism, meditation, and spiritual growth. This
               platform is designed to unite Buddhists and seekers worldwide,
@@ -228,13 +228,13 @@ function Contact() {
         </div>
 
         {/** This is the Initial Portfolio Website*/}
-        <div class="flex gap-[80px] items-center mt-12">
-          <div class="w-full">
-            <h3 class="text-[#ffe578] font-bold text-4xl">
+        <div className="flex gap-[80px] items-center mt-12">
+          <div className="w-full">
+            <h3 className="text-[#ffe578] font-bold text-4xl">
               My Initial Portfolio
             </h3>
-            <span class="text-[#ffe578] text-lg">(Portfolio)</span>
-            <p class="text-justify my-4">
+            <span className="text-[#ffe578] text-lg">(Portfolio)</span>
+            <p className="text-justify my-4">
               This is my initial portfolio project, showcasing my skills and
               work experience as a web developer.
             </p>
@@ -263,9 +263,9 @@ function Contact() {
               ))}
             </div>
           </div>
-          <a href="#" class="w-full">
+          <a href="#" className="w-full">
             <img
-              class="max-w-[400px] ml-auto hover:scale-110 ease-in-out duration-200"
+              className="max-w-[400px] ml-auto hover:scale-110 ease-in-out duration-200 z-50"
               src="/src/assets/images/macbook2.png"
               alt=""
             />
@@ -273,20 +273,24 @@ function Contact() {
         </div>
 
         {/** This is the 3rd Website*/}
-        <div class="flex gap-[80px] items-center mt-12">
-          <a href="#" class="w-full" target="_blank">
+        <div className="flex gap-[80px] items-center mt-12">
+          <a href="#" className="w-full" target="_blank">
             <img
-              class="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200"
+              className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
               src="/src/assets/images/macbook1.png"
               alt=""
             />
           </a>
-          <div class="w-full">
+          <div className="w-full">
             <a href="#" target="_blank">
-              <h3 class="text-[#fc815c] font-bold text-4xl">In Progress...</h3>
+              <h3 className="text-[#fc815c] font-bold text-4xl">
+                In Progress...
+              </h3>
             </a>
-            <span class="text-[#fc815c] text-lg">(Will Update later...)</span>
-            <p class="text-justify my-4">xxx...</p>
+            <span className="text-[#fc815c] text-lg">
+              (Will Update later...)
+            </span>
+            <p className="text-justify my-4">xxx...</p>
 
             {/* Technology Tags Section */}
             <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
@@ -316,4 +320,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default LatestWorks;

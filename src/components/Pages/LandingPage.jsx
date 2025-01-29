@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Header from "../Home/Header";
-import Contact from "../Home/Contact";
+import LatestWorks from "../Home/LatestWorks";
 
 function LandingPage() {
   useEffect(() => {
@@ -25,13 +25,17 @@ function LandingPage() {
   }, []);
 
   return (
-    <div className="bg-[#111] sm:min-h-[80vh] sm:w-full w-[100vw] overflow-x-hidden">
+    <div className="sm:min-h-[80vh] sm:w-full w-[100vw] overflow-x-hidden text-white">
       <Header></Header>
       <div
         className="absolute w-full h-[100vh] inset-0"
         id="wrapper-canvas"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1))",
+        }}
       ></div>
-      <Contact></Contact>
+      <LatestWorks></LatestWorks>
     </div>
   );
 }
