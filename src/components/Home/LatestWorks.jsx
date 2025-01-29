@@ -3,6 +3,9 @@ import sblogo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
+import macbook1 from "../../assets/images/macbook1.png";
+import macbook2 from "../../assets/images/macbook2.png";
+import macbook3 from "../../assets/images/macbook3.png";
 import PopModal from "./PopModal";
 
 function LatestWorks() {
@@ -181,8 +184,8 @@ function LatestWorks() {
           >
             <img
               className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src="/src/assets/images/macbook1.png"
-              alt=""
+              src={macbook1}
+              alt="macbook1"
             />
           </a>
           <div className="w-full">
@@ -266,8 +269,8 @@ function LatestWorks() {
           <a href="#" className="w-full">
             <img
               className="max-w-[400px] ml-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src="/src/assets/images/macbook2.png"
-              alt=""
+              src={macbook2}
+              alt="macbook2"
             />
           </a>
         </div>
@@ -277,8 +280,8 @@ function LatestWorks() {
           <a href="#" className="w-full" target="_blank">
             <img
               className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src="/src/assets/images/macbook1.png"
-              alt=""
+              src={macbook3}
+              alt="macbook3"
             />
           </a>
           <div className="w-full">
