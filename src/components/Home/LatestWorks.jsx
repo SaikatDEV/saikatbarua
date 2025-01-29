@@ -3,9 +3,9 @@ import sblogo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import macbook1 from "../../assets/images/macbook1.png";
-import macbook2 from "../../assets/images/macbook2.png";
-import macbook3 from "../../assets/images/macbook3.png";
+import macbook1 from "../../assets/images/macbook5.png";
+import macbook2 from "../../assets/images/macbook6.png";
+import macbook3 from "../../assets/images/macbook7.png";
 import PopModal from "./PopModal";
 
 function LatestWorks() {
