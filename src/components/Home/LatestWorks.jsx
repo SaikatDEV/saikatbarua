@@ -29,10 +29,10 @@ function LatestWorks() {
   return (
     <>
       {/**This is the linkedin, github, stackoverflow section */}
-      <div className="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
+      <div class="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
         {/** links */}
-        <ul className="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
-          <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
+        <ul class="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
+          <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="https://www.linkedin.com/in/saikat-barua-mcitp-icp-csm/"
               target="_blank"
@@ -46,7 +46,7 @@ function LatestWorks() {
               </svg>
             </a>
           </li>
-          <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
+          <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="https://github.com/SaikatDEV"
               target="_blank"
@@ -61,7 +61,7 @@ function LatestWorks() {
             </a>
           </li>
           {/**Stackoverflow Icon*/}
-          <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
+          <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="https://stackoverflow.com/users/3434387/saikat"
               target="_blank"
@@ -80,7 +80,7 @@ function LatestWorks() {
             </a>
           </li>
           {/**Mail Icon*/}
-          <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
+          <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a
               href="mailto:devsaikat00@gmail.com"
               target="_blank"
@@ -94,7 +94,7 @@ function LatestWorks() {
               </svg>
             </a>
           </li>
-          <li className="w-8 hover:text-white transform transition duration-300 hover:scale-125">
+          <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
             <a href="https://t.me/saikatdev00" target="_blank">
               <svg
                 aria-hidden="true"
@@ -169,35 +169,75 @@ function LatestWorks() {
       {/**This is the latest work section */}
       <section
         id="latestWorks"
-        className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44"
+        className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] 
+        overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44 relative"
       >
-        {/* <h2 class="text-4xl w-max mx-auto text-center text-[#1788ae] border-b-2 border-[#1788ae]">
+        <h2
+          class="text-4xl w-max mx-auto text-center text-[#fc815c] font-bold 
+        border-b-2 border-[#fc815c] bg-[#111] relative z-10"
+        >
           Latest Works
-        </h2> */}
+        </h2>
 
         {/** This is the buddhist Campus Website*/}
-        <div className="flex gap-[80px] items-center mt-12">
+        <div class="flex gap-[80px] items-center pt-10 relative">
+          {/** This is the Horizontal Line */}
+          <div class="h-[2px] left-1/3 right-1/2 bg-[#fc815c] absolute top-1/2"></div>
+          {/** This is the small Circle */}
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] 
+              absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
+              hover:scale-110 ease-in-out duration-100"
+          ></div>
+
           <a
             href="https://buddhistcampus.netlify.app/"
-            className="w-full"
+            class="w-full flex"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <img
-              className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src={macbook1}
-              alt="macbook1"
-            />
-          </a>
-          <div className="w-full">
-            <a href="https://buddhistcampus.netlify.app/" target="_blank">
-              <h3 className="text-[#fc815c] font-bold text-4xl">
+            <div class="relative group mr-auto">
+              {/** tooltip which is behind the Image*/}
+              <span
+                class="flex group-hover:-top-14 ease-jump
+                          duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
+                          top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
+                          after:content-[''] after:absolute after:left-1/2 
+                          after:-translate-x-1/2 after:-bottom-2
+                          after:w-4 after:h-4 after:bg-inherit after:rotate-45"
+              >
                 Buddhist Campus
-              </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
+                >
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+              <img
+                class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
+                duration-200 relative mt-4"
+                src={macbook1}
+                alt="macbook1"
+              />
+            </div>
+          </a>
+          <div class="w-full">
+            <a href="https://buddhistcampus.netlify.app/" target="_blank">
+              <h3 class="text-[#fc815c] font-bold text-4xl">Buddhist Campus</h3>
             </a>
-            <span className="text-[#fc815c] text-lg">
-              (A Path to Better Life)
-            </span>
-            <p className="text-justify my-4">
+            <span class="text-[#fc815c] text-lg">(A Path to Better Life)</span>
+            <p class="text-justify my-4">
               Welcome to Path to Better Life, your comprehensive hub for all
               things related to Buddhism, meditation, and spiritual growth. This
               platform is designed to unite Buddhists and seekers worldwide,
@@ -205,7 +245,7 @@ function LatestWorks() {
             </p>
 
             {/* Technology Tags Section */}
-            <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+            <div class="flex flex-wrap gap-3 justify-center sm:justify-start">
               {[
                 "javascript",
                 "react.js",
@@ -221,7 +261,7 @@ function LatestWorks() {
               ].map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
+                  class="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
                 >
                   #{tech}
                 </span>
@@ -231,19 +271,19 @@ function LatestWorks() {
         </div>
 
         {/** This is the Initial Portfolio Website*/}
-        <div className="flex gap-[80px] items-center mt-12">
-          <div className="w-full">
-            <h3 className="text-[#ffe578] font-bold text-4xl">
+        <div class="flex gap-[80px] items-center pt-16">
+          <div class="w-full">
+            <h3 class="text-[#ffe578] font-bold text-4xl">
               My Initial Portfolio
             </h3>
-            <span className="text-[#ffe578] text-lg">(Portfolio)</span>
-            <p className="text-justify my-4">
+            <span class="text-[#ffe578] text-lg">(Portfolio)</span>
+            <p class="text-justify my-4">
               This is my initial portfolio project, showcasing my skills and
               work experience as a web developer.
             </p>
 
             {/* Technology Tags Section */}
-            <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+            <div class="flex flex-wrap gap-3 justify-center sm:justify-start relative">
               {[
                 "javascript",
                 "react.js",
@@ -259,65 +299,69 @@ function LatestWorks() {
               ].map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
+                  class="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
                 >
                   #{tech}
                 </span>
               ))}
             </div>
           </div>
-          <a href="#" className="w-full">
-            <img
-              className="max-w-[400px] ml-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src={macbook2}
-              alt="macbook2"
-            />
-          </a>
-        </div>
 
-        {/** This is the 3rd Website*/}
-        <div className="flex gap-[80px] items-center mt-12">
-          <a href="#" className="w-full" target="_blank">
-            <img
-              className="max-w-[400px] mr-auto hover:scale-110 ease-in-out duration-200 z-50"
-              src={macbook3}
-              alt="macbook3"
-            />
-          </a>
-          <div className="w-full">
-            <a href="#" target="_blank">
-              <h3 className="text-[#fc815c] font-bold text-4xl">
-                In Progress...
-              </h3>
-            </a>
-            <span className="text-[#fc815c] text-lg">
-              (Will Update later...)
-            </span>
-            <p className="text-justify my-4">xxx...</p>
+          {/** This is the Horizontal Line */}
+          <div class="h-[2px] right-1/3 left-1/2 bg-[#fc815c] absolute top-1/2"></div>
+          {/** This is the small Circle */}
+          <div
+            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] 
+                        absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
+                        hover:scale-110 ease-in-out duration-100"
+          ></div>
 
-            {/* Technology Tags Section */}
-            <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
-              {[
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-                "xxx",
-              ].map((tech, index) => (
-                <span
-                  key={index}
-                  className="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
+          <a
+            href="https://buddhistcampus.netlify.app/"
+            class="w-full flex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="relative group ml-auto">
+              {/** tooltip which is behind the Image*/}
+              <span
+                class="flex group-hover:-top-14 ease-jump
+                        duration-200 bg-[#ffe578] absolute left-1/2 -translate-x-1/2
+                        top-4 text-black px-4 py-2 rounded w-max items-center gap-1 
+                        after:content-[''] after:absolute after:left-1/2 
+                        after:-translate-x-1/2 after:-bottom-2
+                        after:w-4 after:h-4 after:bg-inherit after:rotate-45"
+              >
+                My Initial Portfolio
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-external-link"
                 >
-                  #{tech}
-                </span>
-              ))}
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </span>
+              <img
+                class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
+              duration-200 relative mt-4"
+                src={macbook2}
+                alt="macbook2"
+              />
             </div>
-          </div>
+          </a>
         </div>
+
+        {/** This the vertical Line */}
+        <div class="w-[2px] bg-[#fc815c] absolute top-0 bottom-0 left-1/2"></div>
       </section>
     </>
   );

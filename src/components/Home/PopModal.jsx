@@ -73,7 +73,7 @@ function PopModal({ isOpen, onClose }) {
               Web Development. As well expert on designing Test Automation
               Framework from scratch using Selenium or any other framework like
               GEB-Spock, Cucumber BDD, Serenity-BDD, PlayWright, Karate, Rspec,
-              TestNG, RestAssured API, Jmeter etc. <br /> <br />
+              TestNG, RestAssured API, Jmeter, UiPath etc. <br /> <br />
               Technologies and tools that I use to create websites.
             </p>
 
