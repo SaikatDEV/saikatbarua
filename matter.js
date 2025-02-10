@@ -98,7 +98,7 @@ function runMatter() {
 
   World.add(world, attractiveBody);
 
-  for (var i = 0; i < 160; i += 1) {
+  for (var i = 0; i < 100; i += 1) {
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     let s =
