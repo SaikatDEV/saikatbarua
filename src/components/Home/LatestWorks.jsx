@@ -3,9 +3,8 @@ import sblogo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import macbook1 from "../../assets/images/macbook5.png";
-import macbook2 from "../../assets/images/macbook6.png";
-import macbook3 from "../../assets/images/macbook7.png";
+import macbook1 from "../../assets/images/macbook_buddhist.png";
+import macbook2 from "../../assets/images/macbook_saikat.png";
 import PopModal from "./PopModal";
 
 function LatestWorks() {
@@ -183,7 +182,9 @@ function LatestWorks() {
         <div class="flex gap-[80px] items-center pt-10 relative">
           {/** This is the Horizontal Line */}
           <div class="h-[2px] left-1/3 right-1/2 bg-[#fc815c] absolute top-1/2"></div>
+
           {/** This is the small Circle */}
+
           <div
             class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] 
               absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
