@@ -3,8 +3,8 @@ import sblogo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
-import macbook1 from "../../assets/images/macbook_buddhist.png";
-import macbook2 from "../../assets/images/macbook_saikat.png";
+import macbook1 from "../../assets/images/macbook_buddhist.webp";
+import macbook2 from "../../assets/images/macbook_saikat.webp";
 import PopModal from "./PopModal";
 
 function LatestWorks() {
@@ -318,7 +318,7 @@ function LatestWorks() {
           ></div>
 
           <a
-            href="https://buddhistcampus.netlify.app/"
+            href="https://saikatbarua-portfolio.netlify.app/"
             class="w-full flex"
             target="_blank"
             rel="noopener noreferrer"
