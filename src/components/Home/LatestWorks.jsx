@@ -6,6 +6,7 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import macbook1 from "../../assets/images/macbook_buddhist.webp";
 import macbook2 from "../../assets/images/macbook_saikat.webp";
 import PopModal from "./PopModal";
+import { blue } from "@mui/material/colors";
 
 function LatestWorks() {
   // This state is for modal open or close
@@ -172,8 +173,9 @@ function LatestWorks() {
         overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44 relative"
       >
         <h2
-          class="text-4xl w-max mx-auto text-center text-[#fc815c] font-bold 
-        border-b-2 border-[#fc815c] bg-[#111] relative z-10"
+          class="text-4xl w-max mx-auto text-center font-bold 
+          border-b-2 bg-[#111] relative z-10"
+          style={{ borderColor: "#416ea4", color: "#7ba7dd" }}
         >
           Latest Works
         </h2>
@@ -181,14 +183,18 @@ function LatestWorks() {
         {/** This is the buddhist Campus Website*/}
         <div class="flex gap-[80px] items-center pt-10 relative">
           {/** This is the Horizontal Line */}
-          <div class="h-[2px] left-1/3 right-1/2 bg-[#fc815c] absolute top-1/2"></div>
+          <div
+            class="h-[2px] left-1/3 right-1/2 absolute top-1/2"
+            style={{ backgroundColor: "#416ea4" }}
+          ></div>
 
           {/** This is the small Circle */}
 
           <div
-            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] 
+            class="w-4 h-4 rounded-full border-[3px] 
               absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
               hover:scale-110 ease-in-out duration-100"
+            style={{ borderColor: "#416ea4" }}
           ></div>
 
           <a
@@ -309,12 +315,16 @@ function LatestWorks() {
           </div>
 
           {/** This is the Horizontal Line */}
-          <div class="h-[2px] right-1/3 left-1/2 bg-[#fc815c] absolute top-1/2"></div>
+          <div
+            class="h-[2px] right-1/3 left-1/2 absolute top-1/2"
+            style={{ backgroundColor: "#416ea4" }}
+          ></div>
           {/** This is the small Circle */}
           <div
-            class="w-4 h-4 rounded-full border-[3px] border-[#fc815c] 
+            class="w-4 h-4 rounded-full border-[3px]
                         absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
                         hover:scale-110 ease-in-out duration-100"
+            style={{ borderColor: "#416ea4" }}
           ></div>
 
           <a
@@ -362,8 +372,20 @@ function LatestWorks() {
         </div>
 
         {/** This the vertical Line */}
-        <div class="w-[2px] bg-[#fc815c] absolute top-0 bottom-0 left-1/2"></div>
+        <div
+          class="w-[2px] absolute top-0 bottom-0 left-1/2"
+          style={{ backgroundColor: "#416ea4" }}
+        ></div>
       </section>
+      <button
+        className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
+        hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md 
+        text-white transform transition duration-200 hover:scale-110
+        -translate-y-12 left-1/2 -translate-x-1/2 absolute"
+        onClick={scrollToLatestWorks}
+      >
+        Let's Connect
+      </button>
     </>
   );
 }
