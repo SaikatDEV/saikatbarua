@@ -6,7 +6,6 @@ import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import macbook1 from "../../assets/images/macbook_buddhist.webp";
 import macbook2 from "../../assets/images/macbook_saikat.webp";
 import PopModal from "./PopModal";
-import { blue } from "@mui/material/colors";
 
 function LatestWorks() {
   // This state is for modal open or close
@@ -124,7 +123,9 @@ function LatestWorks() {
             <img
               src={sblogo}
               alt="Logo"
-              className="hidden sm:block pointer-events-none w-32 sm:w-full sm:min-w-60 lg:min-w-96 sm:-translate-y-1/3 sm:translate-x-1/2  max-sm:-translate-y-[20vh]"
+              className="hidden sm:block pointer-events-none w-32 sm:w-full sm:min-w-60 
+              lg:min-w-96 sm:-translate-y-1/3 sm:translate-x-1/2  max-sm:-translate-y-[20vh]"
+              style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
             />
           </div>
 
@@ -234,6 +235,7 @@ function LatestWorks() {
               <img
                 class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
                 duration-200 relative mt-4"
+                style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook1}
                 alt="macbook1"
               />
@@ -280,9 +282,14 @@ function LatestWorks() {
         {/** This is the Initial Portfolio Website*/}
         <div class="flex gap-[80px] items-center pt-16">
           <div class="w-full">
-            <h3 class="text-[#ffe578] font-bold text-4xl">
-              My Initial Portfolio
-            </h3>
+            <a
+              href="https://saikatbarua-portfolio.netlify.app/"
+              target="_blank"
+            >
+              <h3 class="text-[#ffe578] font-bold text-4xl">
+                My Initial Portfolio
+              </h3>
+            </a>
             <span class="text-[#ffe578] text-lg">(Portfolio)</span>
             <p class="text-justify my-4">
               This is my initial portfolio project, showcasing my skills and
@@ -364,6 +371,7 @@ function LatestWorks() {
               <img
                 class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
               duration-200 relative mt-4"
+                style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook2}
                 alt="macbook2"
               />
@@ -373,19 +381,19 @@ function LatestWorks() {
 
         {/** This the vertical Line */}
         <div
-          class="w-[2px] absolute top-0 bottom-0 left-1/2"
-          style={{ backgroundColor: "#416ea4" }}
+          class="w-[2px] absolute top-0 left-1/2"
+          style={{ backgroundColor: "#416ea4", bottom: "12px" }}
         ></div>
-      </section>
-      <button
-        className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
+        <button
+          className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
         hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md 
         text-white transform transition duration-200 hover:scale-110
-        -translate-y-12 left-1/2 -translate-x-1/2 absolute"
-        onClick={scrollToLatestWorks}
-      >
-        Let's Connect
-      </button>
+        left-1/2 -translate-x-1/2 absolute bg-[#111] bottom-[12px]"
+          onClick={scrollToLatestWorks}
+        >
+          Let's Connect
+        </button>
+      </section>
     </>
   );
 }
