@@ -37,7 +37,8 @@ function PopModal({ isOpen, onClose }) {
         xl:w-1/2 for large screens
         */}
       <div
-        className={`bg-[#1f2937] p-8 rounded-lg w-10/12 sm:w-4/5 lg:w-3/5 xl:w-1/2 relative transform transition-all duration-300 ${
+        className={`bg-[#1f2937] p-8 rounded-lg w-10/12 sm:w-4/5 lg:w-3/5 xl:w-1/2 
+        relative transform transition-all duration-300 ${
           isOpen
             ? "translate-x-0 opacity-100 scale-100"
             : "-translate-x-full opacity-0 scale-90"
@@ -53,9 +54,15 @@ function PopModal({ isOpen, onClose }) {
         </button>
 
         {/* Main Modal Content Section */}
-        <div className="flex flex-col sm:flex-row items-center gap-8 pt-4 sm:pt-0 overflow-y-scroll max-h-[80vh]">
+        <div
+          className="flex flex-col sm:flex-row items-center gap-8 pt-4 
+          sm:pt-0 overflow-y-scroll max-h-[80vh]"
+        >
           {/* Profile Picture Section */}
-          <div className="w-32 h-32 sm:w-48 sm:h-48 flex-shrink-0 rounded-full overflow-hidden border-4 border-[#4b5563]">
+          <div
+            className="w-32 h-32 sm:w-48 sm:h-48 flex-shrink-0 rounded-full 
+            overflow-hidden border-4 border-[#4b5563]"
+          >
             <img
               src={profilePic} // Display profile image
               alt="Profile"
