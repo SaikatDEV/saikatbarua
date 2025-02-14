@@ -167,11 +167,11 @@ function LatestWorks() {
         {/* Modal Popup */}
         <PopModal isOpen={isModalOpen} onClose={toggleModal} />
       </div>
-      {/**This is the latest work section */}
+      {/**This is the latest work section -------------------------------------- */}
       <section
         id="latestWorks"
         className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] 
-        overflow-x-hidden mx-auto sm:px-24 md:px-36 lg:px-44 relative"
+        overflow-x-hidden mx-auto px-6 sm:px-24 md:px-36 lg:px-44 relative"
       >
         <h2
           class="text-4xl w-max mx-auto text-center font-bold 
@@ -211,11 +211,11 @@ function LatestWorks() {
               {/** tooltip which is behind the Image*/}
               <span
                 class="flex group-hover:-top-14 ease-jump
-                          duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
-                          top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
-                          after:content-[''] after:absolute after:left-1/2 
-                          after:-translate-x-1/2 after:-bottom-2 hidden sm:block
-                          after:w-4 after:h-4 after:bg-inherit after:rotate-45"
+                      duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
+                      top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
+                      after:content-[''] after:absolute after:left-1/2 
+                      after:-translate-x-1/2 after:-bottom-2 
+                      after:w-4 after:h-4 after:bg-inherit after:rotate-45"
               >
                 Buddhist Campus
                 <svg
@@ -244,7 +244,7 @@ function LatestWorks() {
               />
             </div>
           </a>
-          <div class="w-full">
+          <div class="sm:w-full">
             <a href="https://buddhistcampus.netlify.app/" target="_blank">
               <h3 class="text-[#fc815c] font-bold text-4xl">Buddhist Campus</h3>
             </a>
