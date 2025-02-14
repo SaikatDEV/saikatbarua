@@ -181,8 +181,8 @@ function LatestWorks() {
           Latest Works
         </h2>
 
-        {/** This is the buddhist Campus Website*/}
-        <div class="flex gap-[80px] items-center pt-10 relative">
+        {/** This is the buddhist Campus Website-------------------------------*/}
+        <div class="flex gap-[80px] items-center pt-10 relative flex-col sm:flex-row">
           {/** This is the Horizontal Line */}
           <div
             className="horizontal-line hidden sm:block"
@@ -210,7 +210,7 @@ function LatestWorks() {
             <div class="relative group mr-auto">
               {/** tooltip which is behind the Image*/}
               <span
-                class="flex group-hover:-top-14 ease-jump
+                class="hidden sm:flex group-hover:-top-14 ease-jump
                       duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
                       top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
                       after:content-[''] after:absolute after:left-1/2 
@@ -237,7 +237,7 @@ function LatestWorks() {
               </span>
               <img
                 class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
-                duration-200 relative -mt-[500px] sm:mt-4"
+                duration-200 relative mt-4"
                 style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook1}
                 alt="macbook1"
@@ -282,8 +282,8 @@ function LatestWorks() {
           </div>
         </div>
 
-        {/** This is the Initial Portfolio Website*/}
-        <div class="flex gap-[80px] items-center pt-16 relative w-full">
+        {/** This is the Initial Portfolio Website------------------------------------*/}
+        <div class="flex sm:flex-row flex-col gap-[80px] items-center pt-16 relative w-full">
           <div class="w-full">
             <a
               href="https://saikatbarua-portfolio.netlify.app/"
@@ -349,7 +349,7 @@ function LatestWorks() {
             <div class="relative group ml-auto">
               {/** tooltip which is behind the Image*/}
               <span
-                class="flex group-hover:-top-14 ease-jump
+                class=" hidden sm:flex group-hover:-top-14 ease-jump
                         duration-200 bg-[#ffe578] absolute left-1/2 -translate-x-1/2
                         top-4 text-black px-4 py-2 rounded w-max items-center gap-1 
                         after:content-[''] after:absolute after:left-1/2 
@@ -394,8 +394,8 @@ function LatestWorks() {
           className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
         hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md 
         text-white transform transition duration-200 hover:scale-110
-        left-1/2 -translate-x-1/2 absolute bg-[#111]"
-          style={{ bottom: "12px" }}
+        left-1/2 -translate-x-1/2 absolute bg-[#111] sm:bottom-3"
+          // style={{ bottom: "12px" }}
           onClick={scrollToLatestWorks}
         >
           Let's Connect
