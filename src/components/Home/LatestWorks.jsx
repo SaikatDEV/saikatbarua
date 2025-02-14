@@ -185,8 +185,11 @@ function LatestWorks() {
         <div class="flex gap-[80px] items-center pt-10 relative">
           {/** This is the Horizontal Line */}
           <div
-            class="h-[2px] left-1/3 right-1/2 absolute top-1/2"
-            style={{ backgroundColor: "#416ea4" }}
+            className="horizontal-line"
+            style={{
+              right: "50%",
+              left: "10%",
+            }}
           ></div>
 
           {/** This is the small Circle */}
@@ -195,7 +198,7 @@ function LatestWorks() {
             class="w-4 h-4 rounded-full border-[3px] 
               absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
               hover:scale-110 ease-in-out duration-100"
-            style={{ borderColor: "#416ea4" }}
+            style={{ borderColor: "#fc815c" }}
           ></div>
 
           <a
@@ -280,7 +283,7 @@ function LatestWorks() {
         </div>
 
         {/** This is the Initial Portfolio Website*/}
-        <div class="flex gap-[80px] items-center pt-16">
+        <div class="flex gap-[80px] items-center pt-16 relative w-full">
           <div class="w-full">
             <a
               href="https://saikatbarua-portfolio.netlify.app/"
@@ -323,15 +326,18 @@ function LatestWorks() {
 
           {/** This is the Horizontal Line */}
           <div
-            class="h-[2px] right-1/3 left-1/2 absolute top-1/2"
-            style={{ backgroundColor: "#416ea4" }}
+            className="horizontal-line"
+            style={{
+              right: "10%",
+              left: "50%",
+            }}
           ></div>
           {/** This is the small Circle */}
           <div
             class="w-4 h-4 rounded-full border-[3px]
                         absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
                         hover:scale-110 ease-in-out duration-100"
-            style={{ borderColor: "#416ea4" }}
+            style={{ borderColor: "#ffe578" }}
           ></div>
 
           <a
