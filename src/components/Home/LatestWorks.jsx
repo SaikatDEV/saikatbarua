@@ -171,7 +171,7 @@ function LatestWorks() {
       <section
         id="latestWorks"
         className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] 
-        overflow-x-hidden mx-auto sm:px-4 md:px-10 lg:px-24 custom-lg:px-48 relative"
+        overflow-x-hidden mx-auto sm:px-4 md:px-10 lg:px-24 custom-lg:px-40 relative"
       >
         <h2
           class="text-4xl w-max mx-auto text-center font-bold 
@@ -236,7 +236,7 @@ function LatestWorks() {
                 </svg>
               </span>
               <img
-                class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
+                class="max-w-[400px] lg:max-w-[450px] custom-lg:max-w-[500px] mr-auto hover:scale-110 ease-in-out 
                 duration-200 relative mt-4"
                 style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook1}
@@ -375,7 +375,7 @@ function LatestWorks() {
                 </svg>
               </span>
               <img
-                class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
+                class="max-w-[400px] lg:max-w-[450px] custom-lg:max-w-[500px] mr-auto hover:scale-110 ease-in-out 
               duration-200 relative mt-4"
                 style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook2}
