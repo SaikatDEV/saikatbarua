@@ -28,7 +28,7 @@ function LatestWorks() {
   return (
     <>
       {/**This is the linkedin, github, stackoverflow section */}
-      <div class="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 sm:px-40 w-full overflow-hidden font-['Nunito']">
+      <div class="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 lg:px-40 w-full overflow-hidden font-['Nunito']">
         {/** links */}
         <ul class="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
           <li class="w-8 hover:text-white transform transition duration-300 hover:scale-125">
@@ -118,7 +118,7 @@ function LatestWorks() {
         </ul>
 
         {/** About me */}
-        <section className="flex flex-col sm:flex-row items-center relative left-[10%]">
+        <section className="flex flex-col sm:flex-row items-center relative left-[20%] md:left-[10%] -top-36 sm:top-0">
           <div className="ml-0 sm:ml-40 ">
             <img
               src={sblogo}
@@ -185,7 +185,7 @@ function LatestWorks() {
         <div class="flex gap-[80px] items-center pt-10 relative">
           {/** This is the Horizontal Line */}
           <div
-            className="horizontal-line"
+            className="horizontal-line hidden sm:block"
             style={{
               right: "50%",
               left: "10%",
@@ -195,7 +195,7 @@ function LatestWorks() {
           {/** This is the small Circle */}
 
           <div
-            class="w-4 h-4 rounded-full border-[3px] 
+            class="w-4 h-4 rounded-full border-[3px] hidden sm:block
               absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
               hover:scale-110 ease-in-out duration-100"
             style={{ borderColor: "#fc815c" }}
@@ -214,7 +214,7 @@ function LatestWorks() {
                           duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
                           top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
                           after:content-[''] after:absolute after:left-1/2 
-                          after:-translate-x-1/2 after:-bottom-2
+                          after:-translate-x-1/2 after:-bottom-2 hidden sm:block
                           after:w-4 after:h-4 after:bg-inherit after:rotate-45"
               >
                 Buddhist Campus
@@ -237,7 +237,7 @@ function LatestWorks() {
               </span>
               <img
                 class="max-w-[400px] mr-auto hover:scale-110 ease-in-out 
-                duration-200 relative mt-4"
+                duration-200 relative -mt-[500px] sm:mt-4"
                 style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
                 src={macbook1}
                 alt="macbook1"
@@ -326,7 +326,7 @@ function LatestWorks() {
 
           {/** This is the Horizontal Line */}
           <div
-            className="horizontal-line"
+            className="horizontal-line hidden sm:block"
             style={{
               right: "10%",
               left: "50%",
@@ -334,7 +334,7 @@ function LatestWorks() {
           ></div>
           {/** This is the small Circle */}
           <div
-            class="w-4 h-4 rounded-full border-[3px]
+            class="w-4 h-4 rounded-full border-[3px] hidden sm:block
                         absolute left-1/2 -translate-x-1/2 bg-[#111] z-10 
                         hover:scale-110 ease-in-out duration-100"
             style={{ borderColor: "#ffe578" }}
@@ -387,7 +387,7 @@ function LatestWorks() {
 
         {/** This the vertical Line */}
         <div
-          class="w-[2px] absolute top-0 left-1/2"
+          class="w-[2px] absolute top-0 left-1/2 hidden sm:block"
           style={{ backgroundColor: "#416ea4", bottom: "12px" }}
         ></div>
         <button
