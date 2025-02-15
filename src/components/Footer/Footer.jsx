@@ -103,6 +103,7 @@ export default function Footer() {
           </span>
           <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a
+              title="Go to top"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
@@ -119,6 +120,7 @@ export default function Footer() {
             </a>
 
             <a
+              title="Linkedin"
               href="https://www.linkedin.com/in/saikat-barua-mcitp-icp-csm/"
               target="_blank"
               rel="noopener noreferrer"
@@ -137,6 +139,7 @@ export default function Footer() {
               <span class="sr-only">Linkedin</span>
             </a>
             <a
+              title="Github"
               href="https://github.com/SaikatDEV"
               target="_blank"
               rel="noopener noreferrer"
@@ -155,6 +158,7 @@ export default function Footer() {
               <span class="sr-only">Github</span>
             </a>
             <a
+              title="Stackoverflow"
               href="https://stackoverflow.com/users/3434387/saikat"
               target="_blank"
               rel="noopener noreferrer"
@@ -177,6 +181,7 @@ export default function Footer() {
               <span class="sr-only">Stackoverflow</span>
             </a>
             <a
+              title="Mail"
               href="mailto:devsaikat00@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
