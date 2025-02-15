@@ -410,7 +410,7 @@ function LatestWorks() {
           Let's Connect
         </button>
       </section>
-      {/** This is the Lets Connect Section */}
+      {/** This is the Lets Connect Section------------------- */}
       <section
         id="letsConnect"
         class="bg-[#111939] sm:px-10 md:px-32 lg:px-44 h-[64vh] flex flex-col md:flex-row justify-center items-center"
@@ -425,6 +425,7 @@ function LatestWorks() {
             data-netlify="true"
             class="max-w-sm mx-auto"
             netlify
+            action="https://formsubmit.co/devsaikat00@gmail.com"
           >
             <input type="hidden" name="form-name" value="contact" />
 
