@@ -114,10 +114,10 @@ export default function Footer() {
               onClick={scrollToTop}
               target="_blank"
               rel="noopener noreferrer"
-              class="text-gray-400 hover:text-gray-900 dark:hover:text-white cursor-pointer"
+              class="cursor-pointer"
             >
               <svg
-                class="w-6 h-6"
+                class="w-6 h-6 fill-green-300 hover:fill-gray-400"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
