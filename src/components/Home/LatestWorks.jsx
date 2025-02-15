@@ -424,6 +424,7 @@ function LatestWorks() {
             method="POST"
             data-netlify="true"
             class="max-w-sm mx-auto"
+            netlify
           >
             <input type="hidden" name="form-name" value="contact" />
 
@@ -431,6 +432,7 @@ function LatestWorks() {
               <label
                 for="username-icon"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                name="name"
               >
                 Your Name
               </label>
@@ -461,6 +463,7 @@ function LatestWorks() {
               <label
                 for="email-address-icon"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                name="email"
               >
                 Your Email
               </label>
@@ -492,6 +495,7 @@ function LatestWorks() {
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                name="message"
               >
                 Your Message
               </label>
