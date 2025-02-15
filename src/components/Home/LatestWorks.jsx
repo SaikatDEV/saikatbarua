@@ -403,7 +403,7 @@ function LatestWorks() {
           className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
         hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md 
         text-white transform transition duration-200 hover:scale-110
-        left-1/2 -translate-x-1/2 absolute bg-[#111] bottom-3"
+        left-1/2 -translate-x-1/2 absolute bg-[#111] bottom-3 hidden sm:block"
           // style={{ bottom: "12px" }}
           onClick={scrollToletsConnect}
         >
