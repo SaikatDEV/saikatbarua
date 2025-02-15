@@ -419,7 +419,7 @@ function LatestWorks() {
           <img src={connect} />
         </div>
         <div class="w-full mb-10">
-          <form class="max-w-sm mx-auto">
+          <form netlify name="contactUS" class="max-w-sm mx-auto">
             <div class="mt-4">
               <label
                 for="username-icon"
