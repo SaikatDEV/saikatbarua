@@ -5,6 +5,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import macbook1 from "../../assets/images/macbook_buddhist.webp";
 import macbook2 from "../../assets/images/macbook_saikat.webp";
+import connect from "../../assets/images/connect.png";
 import PopModal from "./PopModal";
 
 function LatestWorks() {
@@ -415,7 +416,7 @@ function LatestWorks() {
         class="bg-[#111939] sm:px-10 md:px-32 lg:px-44 h-[64vh] flex flex-col md:flex-row justify-center items-center"
       >
         <div class="w-full mt-4">
-          <img src="/src/assets/images/connect.png" alt="connect" />
+          <img src={connect} />
         </div>
         <div class="w-full mb-10">
           <form class="max-w-sm mx-auto">
