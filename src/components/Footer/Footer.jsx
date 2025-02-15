@@ -2,6 +2,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    const section = document.getElementById("top");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer class="bg-white dark:bg-gray-900">
       <div class="mx-auto w-full max-w-screen-xl">
@@ -104,10 +111,10 @@ export default function Footer() {
           <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a
               title="Go to top"
-              href="#"
+              onClick={scrollToTop}
               target="_blank"
               rel="noopener noreferrer"
-              class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white cursor-pointer"
             >
               <svg
                 class="w-6 h-6"
