@@ -428,7 +428,7 @@ function LatestWorks() {
           >
             <input type="hidden" name="form-name" value="contact" />
 
-            <div class="mt-2">
+            <div class="mt-4">
               <label
                 for="username-icon"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -459,7 +459,7 @@ function LatestWorks() {
               </div>
             </div>
 
-            <div class="mt-2">
+            <div class="mt-4">
               <label
                 for="email-address-icon"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -491,7 +491,7 @@ function LatestWorks() {
               </div>
             </div>
 
-            <div class="mt-2">
+            <div class="mt-4">
               <label
                 for="message"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -511,7 +511,7 @@ function LatestWorks() {
 
             <button
               type="submit"
-              class="mt-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Send
             </button>
