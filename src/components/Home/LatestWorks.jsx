@@ -144,7 +144,7 @@ function LatestWorks() {
                 Saikat Barua
               </h1>
               <h3 className="pointer-events-none text-xl sm:text-2xl md:text-3xl font-semibold italic font-['Roboto']">
-                Front-end Developer
+                Software Developer
               </h3>
             </div>
             <div className="flex flex-col sm:flex-col gap-32 items-center">

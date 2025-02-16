@@ -76,19 +76,20 @@ function PopModal({ isOpen, onClose }) {
               ABOUT ME
             </h2>
             <p className="text-lg text-gray-300 font-['Open+Sans'] leading-relaxed mb-6">
-              I am a Technology-minded individual with a passion for Front End
-              Web Development. As well expert on designing Test Automation
+              I am a Technology-minded individual with a passion for Web
+              Development. As well as an expert on designing Test Automation
               Framework from scratch using Selenium or any other framework like
               GEB-Spock, Cucumber BDD, Serenity-BDD, PlayWright, Karate, Rspec,
               TestNG, RestAssured API, Jmeter, UiPath etc. <br /> <br />
-              Technologies and tools that I use to create websites.
+              Technologies and tools that I use to develop websites.
             </p>
 
             {/* Technology Tags Section */}
-            <div className="flex flex-wrap gap-3 justify-center sm:justify-start">
+            <div className="flex flex-wrap gap-3 justify-start">
               {[
                 "javascript",
                 "react.js",
+                "next.js",
                 "redux",
                 "context-api",
                 "node.js",
