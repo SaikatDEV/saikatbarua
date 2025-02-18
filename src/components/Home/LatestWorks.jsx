@@ -101,7 +101,7 @@ function LatestWorks() {
           </p>
 
           {/* Technology Tags Section */}
-          <div class="flex flex-wrap gap-3 justify-center sm:justify-start">
+          <div class="flex flex-wrap gap-3 justify-start">
             {[
               "javascript",
               "react.js",
@@ -141,7 +141,7 @@ function LatestWorks() {
           </p>
 
           {/* Technology Tags Section */}
-          <div class="flex flex-wrap gap-3 justify-center sm:justify-start relative">
+          <div class="flex flex-wrap gap-3 justify-start relative">
             {[
               "javascript",
               "react.js",
