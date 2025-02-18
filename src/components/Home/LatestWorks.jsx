@@ -2,7 +2,7 @@ import React from "react";
 import macbook1 from "../../assets/images/macbook_buddhist.webp";
 import macbook2 from "../../assets/images/macbook_saikat.webp";
 
-function LatestWorks() {
+function LatestWorks({ theme }) {
   // Scroll to the Lets connect
   const scrollToletsConnect = () => {
     const section = document.getElementById("letsConnect");
@@ -14,13 +14,18 @@ function LatestWorks() {
   return (
     <section
       id="latestWorks"
-      className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] -mt-2
+      className="sm:min-h-[100vh] sm:w-full w-[100vw] -mt-2
         overflow-x-hidden mx-auto px-4 md:px-10 lg:px-24 custom-lg:px-40 relative"
+      style={{ backgroundColor: theme === "dark" ? "#111" : "#849bc5" }}
     >
       <h2
         class="text-4xl w-max mx-auto text-center font-bold 
-          border-b-2 bg-[#111] relative z-10 pt-4 sm:pt-6"
-        style={{ borderColor: "#416ea4", color: "#7ba7dd" }}
+          border-b-2 relative z-10 pt-4 sm:pt-6"
+        style={{
+          borderColor: "#416ea4",
+          backgroundColor: theme === "dark" ? "#111" : "#849bc5",
+          color: theme === "dark" ? "#7ba7dd" : "white",
+        }}
       >
         Latest Works
       </h2>
@@ -55,11 +60,14 @@ function LatestWorks() {
             {/** tooltip which is behind the Image*/}
             <span
               class="hidden sm:flex group-hover:-top-14 ease-jump
-                      duration-200 bg-[#fc815c] absolute left-1/2 -translate-x-1/2
+                      duration-200 absolute left-1/2 -translate-x-1/2
                       top-4 text-white px-4 py-2 rounded w-max items-center gap-1 
                       after:content-[''] after:absolute after:left-1/2 
                       after:-translate-x-1/2 after:-bottom-2 
                       after:w-4 after:h-4 after:bg-inherit after:rotate-45"
+              style={{
+                backgroundColor: theme === "dark" ? "#fc815c" : "#000000",
+              }}
             >
               Buddhist Campus
               <svg
@@ -90,9 +98,19 @@ function LatestWorks() {
         </a>
         <div class="sm:w-full">
           <a href="https://buddhistcampus.netlify.app/" target="_blank">
-            <h3 class="text-[#fc815c] font-bold text-4xl">Buddhist Campus</h3>
+            <h3
+              class="font-bold text-4xl"
+              style={{ color: theme === "dark" ? "#fc815c" : "#000000" }}
+            >
+              Buddhist Campus
+            </h3>
           </a>
-          <span class="text-[#fc815c] text-lg">(A Path to Better Life)</span>
+          <span
+            class="text-lg"
+            style={{ color: theme === "dark" ? "#fc815c" : "#000000" }}
+          >
+            (A Path to Better Life)
+          </span>
           <p class="text-justify my-4">
             Welcome to Path to Better Life, your comprehensive hub for all
             things related to Buddhism, meditation, and spiritual growth. This
