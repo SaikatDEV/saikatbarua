@@ -1,11 +1,13 @@
 import React from "react";
 import connect from "../../assets/images/connect.png";
 
-function Connect() {
+function Connect({ theme }) {
   return (
     <section
       id="letsConnect"
-      class="bg-[#111939] sm:px-10 md:px-32 lg:px-44 h-[64vh] flex flex-col md:flex-row justify-center items-center"
+      class="sm:px-10 md:px-32 lg:px-44 h-[64vh] flex 
+      flex-col md:flex-row justify-center items-center"
+      style={{ backgroundColor: theme === "dark" ? "#111939" : "#476395" }}
     >
       <div class="w-full mt-4">
         <img src={connect} />
@@ -15,7 +17,7 @@ function Connect() {
           name="contact"
           method="POST"
           data-netlify="true"
-          class="max-w-sm mx-auto"
+          class="max-w-sm sm:max-w-md mx-auto"
           netlify
           action="https://formsubmit.co/devsaikat00@gmail.com"
         >
@@ -104,7 +106,10 @@ function Connect() {
 
           <button
             type="submit"
-            class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="w-full mt-4 text-white bg-blue-700 hover:bg-blue-800 
+            focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium 
+            rounded-lg text-sm px-5 py-2.5 text-center 
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Send
           </button>
