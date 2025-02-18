@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Footer({ theme }) {
   const scrollToTop = () => {
     const section = document.getElementById("top");
@@ -15,7 +13,7 @@ export default function Footer({ theme }) {
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
             <h2
-              class="mb-6 text-sm font-semibold text-gray-900 uppercase"
+              class="mb-6 text-sm font-semibold uppercase"
               style={{ color: theme === "dark" ? "white" : "darkblue" }}
             >
               Company
