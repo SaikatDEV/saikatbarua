@@ -67,7 +67,7 @@ function Header({ theme, setTheme }) {
             height="35"
             viewBox="0 0 24 24"
             // fill="none"
-            // stroke="black"
+            stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

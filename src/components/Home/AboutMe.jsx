@@ -25,7 +25,7 @@ function AboutMe({ theme }) {
 
   return (
     <div
-      class="h-[92vh] sm:min-h-[92vh] px-4 lg:px-40 w-full overflow-hidden font-['Nunito']"
+      class="h-[93vh] sm:min-h-[93vh] px-4 lg:px-40 w-full overflow-hidden font-['Nunito']"
       style={{ backgroundColor: theme === "dark" ? "#111" : "#a9c2ef" }}
     >
       {/**This is the linkedin, github, stackoverflow section */}
