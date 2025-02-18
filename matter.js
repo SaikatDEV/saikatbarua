@@ -1,7 +1,15 @@
 var m; // Declare m globally
 
 // Polling function to check for canvas existence
+let retryCount = 0;
+const maxRetries = 25; // (5 seconds / 200ms per retry = 25 retries)
+
 function waitForCanvas() {
+  if (retryCount >= maxRetries) {
+    console.warn("Matter.js did not load within 5 seconds. Stopping retries.");
+    return; // Stop recursion after max retries
+  }
+
   var canvasWrapper = document.querySelector("#wrapper-canvas");
 
   if (canvasWrapper) {
@@ -9,6 +17,7 @@ function waitForCanvas() {
     runMatter();
   } else {
     console.warn("Canvas not found, retrying in 200ms...");
+    retryCount++; // Increment retry counter
     setTimeout(waitForCanvas, 200); // Retry after 200ms
   }
 }

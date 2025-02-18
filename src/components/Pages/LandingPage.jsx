@@ -4,14 +4,24 @@ import LatestWorks from "../Home/LatestWorks";
 import AboutMe from "../Home/AboutMe";
 import Connect from "../Home/Connect";
 
-function LandingPage() {
+function LandingPage({ theme, setTheme }) {
   useEffect(() => {
+    let matterLoaded = false;
+    const timeout = setTimeout(() => {
+      if (!matterLoaded) {
+        console.warn("Matter.js did not load within 5 seconds. Skipping.");
+        return;
+      }
+    }, 5000); // Stop trying after 5 seconds
+
     // Dynamically load matter.js after DOM mounts
     const script = document.createElement("script");
     script.src = "/matter.js";
     script.type = "text/javascript";
     script.async = true;
     script.onload = () => {
+      matterLoaded = true;
+      clearTimeout(timeout); // Clear timeout if loaded within 5 seconds
       if (window.runMatter) {
         window.runMatter();
       } else {
@@ -22,6 +32,7 @@ function LandingPage() {
 
     // Cleanup script on unmount
     return () => {
+      clearTimeout(timeout);
       document.body.removeChild(script);
     };
   }, []);
@@ -36,9 +47,9 @@ function LandingPage() {
             "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1))",
         }}
       ></div>
-      <AboutMe></AboutMe>
-      <LatestWorks></LatestWorks>
-      <Connect></Connect>
+      <AboutMe theme={theme} setTheme={setTheme}></AboutMe>
+      <LatestWorks theme={theme} setTheme={setTheme}></LatestWorks>
+      <Connect theme={theme} setTheme={setTheme}></Connect>
     </div>
   );
 }

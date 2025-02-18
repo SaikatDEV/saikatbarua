@@ -14,7 +14,7 @@ function LatestWorks() {
   return (
     <section
       id="latestWorks"
-      className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] 
+      className="bg-[#111] sm:min-h-[100vh] sm:w-full w-[100vw] -mt-2
         overflow-x-hidden mx-auto px-4 md:px-10 lg:px-24 custom-lg:px-40 relative"
     >
       <h2

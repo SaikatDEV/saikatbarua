@@ -5,7 +5,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDownLong } from "@fortawesome/free-solid-svg-icons";
 import PopModal from "./PopModal";
 
-function LatestWorks() {
+function AboutMe({ theme }) {
   // This state is for modal open or close
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -24,7 +24,10 @@ function LatestWorks() {
   };
 
   return (
-    <div class="bg-[#111] h-[92vh] sm:min-h-[92vh] px-4 lg:px-40 w-full overflow-hidden font-['Nunito']">
+    <div
+      class="h-[92vh] sm:min-h-[92vh] px-4 lg:px-40 w-full overflow-hidden font-['Nunito']"
+      style={{ backgroundColor: theme === "dark" ? "#111" : "#a9c2ef" }}
+    >
       {/**This is the linkedin, github, stackoverflow section */}
       {/** links */}
       <ul class="z-10 ml-5 sm:ml-20 flex flex-col gap-8 translate-y-1/2 sm:translate-y-[80%] text-slate-300">
@@ -167,4 +170,4 @@ function LatestWorks() {
   );
 }
 
-export default LatestWorks;
+export default AboutMe;
