@@ -1,5 +1,6 @@
 import LandingPage from "./Pages/LandingPage";
 import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 import NotFoundpage from "./Pages/NotFoundPage";
 import "/src/input.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           {/* Optional: 404 Not Found Page */}
