@@ -156,7 +156,9 @@ function AboutMe({ theme }) {
       {/** latest works */}
       <div className="w-max mx-auto mt-80 sm:mt-0 sm:-translate-y-12 lg:-translate-y-20 flex flex-col items-center">
         <button
-          className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group text-white transform transition duration-200 hover:scale-110"
+          className="text-2xl bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] 
+          hover:bg-gray-100 font-semibold py-2 px-4 border-none rounded-md group 
+          text-white transform transition duration-200 hover:scale-110"
           onClick={scrollToLatestWorks}
         >
           Latest Works

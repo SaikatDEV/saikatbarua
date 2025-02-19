@@ -102,15 +102,9 @@ function LatestWorks({ theme }) {
               class="font-bold text-4xl"
               style={{ color: theme === "dark" ? "#fc815c" : "#000000" }}
             >
-              Buddhist Campus
+              A Path to Better Life
             </h3>
           </a>
-          <span
-            class="text-lg"
-            style={{ color: theme === "dark" ? "#fc815c" : "#000000" }}
-          >
-            (A Path to Better Life)
-          </span>
           <p class="text-justify my-4">
             Welcome to Path to Better Life, your comprehensive hub for all
             things related to Buddhism, meditation, and spiritual growth. This
@@ -152,7 +146,6 @@ function LatestWorks({ theme }) {
               My Initial Portfolio
             </h3>
           </a>
-          <span class="text-[#ffe578] text-lg">(Portfolio)</span>
           <p class="text-justify my-4">
             This is my initial portfolio project, showcasing my skills and work
             experience as a web developer.
