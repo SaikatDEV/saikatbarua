@@ -14,7 +14,7 @@ function LatestWorks({ theme }) {
   return (
     <section
       id="latestWorks"
-      className="sm:min-h-[100vh] sm:w-full w-[100vw] -mt-2
+      className="sm:min-h-[100vh] sm:w-full w-[100vw] -mt-3
         overflow-x-hidden mx-auto px-4 md:px-10 lg:px-24 custom-lg:px-40 relative"
       style={{ backgroundColor: theme === "dark" ? "#111" : "#849bc5" }}
     >
@@ -96,7 +96,7 @@ function LatestWorks({ theme }) {
             />
           </div>
         </a>
-        <div class="sm:w-full">
+        <div class="sm:w-full -mt-12 sm:mt-0">
           <a href="https://buddhistcampus.netlify.app/" target="_blank">
             <h3
               class="font-bold text-4xl"
@@ -234,8 +234,9 @@ function LatestWorks({ theme }) {
               </svg>
             </span>
             <img
-              class="max-w-[400px] lg:max-w-[450px] custom-lg:max-w-[500px] mr-auto hover:scale-110 ease-in-out 
-              duration-200 relative mt-4"
+              class="max-w-[400px] lg:max-w-[450px] custom-lg:max-w-[500px] mr-auto 
+              hover:scale-110 ease-in-out
+              duration-200 relative -mt-10 sm:mt-4 mb-8 sm:mb-4"
               style={{ filter: "drop-shadow(0 0 60px rgba(59,130,246,0.5))" }}
               src={macbook2}
               alt="macbook2"
