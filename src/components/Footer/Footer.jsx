@@ -10,6 +10,7 @@ export default function Footer({ theme }) {
   return (
     <footer style={{ backgroundColor: theme === "dark" ? "#111" : "#a9c2ef" }}>
       <div class="mx-auto w-full max-w-screen-xl">
+        {/*        
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
             <h2
@@ -124,7 +125,8 @@ export default function Footer({ theme }) {
               </li>
             </ul>
           </div>
-        </div>
+        </div> 
+        */}
         <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
           <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
             © 2018 <a href="https://saikatbarua.com/">ASM Technologies llc</a>.
