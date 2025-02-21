@@ -10,7 +10,7 @@ export default function Footer({ theme }) {
   return (
     <footer
       style={{
-        backgroundColor: theme === "dark" ? "#111" : "#a9c2ef",
+        backgroundColor: theme === "dark" ? "#111939" : "#476395",
       }}
     >
       <div class="mx-auto w-full max-w-screen-xl">
