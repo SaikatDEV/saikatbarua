@@ -55,8 +55,8 @@ function PopModal({ isOpen, onClose }) {
 
         {/* Main Modal Content Section */}
         <div
-          className="flex flex-col sm:flex-row items-center gap-8 pt-4 
-          sm:pt-0 overflow-y-scroll max-h-[80vh]"
+          className="flex flex-col sm:flex-row items-center gap-8
+          pt-0 overflow-y-scroll max-h-[80vh]"
         >
           {/* Profile Picture Section */}
           <div
@@ -72,20 +72,21 @@ function PopModal({ isOpen, onClose }) {
 
           {/* Text and Technologies Section */}
           <div className="flex flex-col text-center sm:text-left">
-            <h2 className="text-5xl font-semibold font-['Open+Sans'] text-white mb-4">
+            <h2 className="text-3xl sm:text-5xl font-semibold font-['Open+Sans'] text-white mb-4">
               ABOUT ME
             </h2>
-            <p className="text-lg text-gray-300 font-['Open+Sans'] leading-relaxed mb-6">
+            <p className="text-md sm:text-lg text-gray-300 font-['Open+Sans'] leading-relaxed mb-2 sm:mb-6">
               I am a Technology-minded individual with a passion for Web
               Development. As well as an expert on designing Test Automation
               Framework from scratch using Selenium or any other framework like
               GEB-Spock, Cucumber BDD, Serenity-BDD, PlayWright, Karate, Rspec,
-              TestNG, RestAssured API, Jmeter, UiPath etc. <br /> <br />
-              Technologies and tools that I use to develop websites.
+              TestNG, RestAssured API, Jmeter, UiPath etc. <br />
+              <br />
+              Technologies and tools that I use to develop websites:
             </p>
 
             {/* Technology Tags Section */}
-            <div className="flex flex-wrap gap-3 justify-start">
+            <div className="flex flex-wrap gap-2 sm:gap-3 justify-center sm:justify-start">
               {[
                 "javascript",
                 "react.js",
@@ -108,7 +109,8 @@ function PopModal({ isOpen, onClose }) {
               ].map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-[#4b5563] text-white px-4 py-2 rounded-md text-md hover:scale-110 transition duration-300"
+                  className="bg-[#4b5563] text-white px-3 py-1 sm:px-4 sm:py-2 rounded-md 
+                  font-['Open+Sans'] text-md hover:scale-110 transition duration-300"
                 >
                   #{tech}
                 </span>
