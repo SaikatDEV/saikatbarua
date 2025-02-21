@@ -5,7 +5,7 @@ function Connect({ theme }) {
   return (
     <section
       id="letsConnect"
-      class="sm:px-10 md:px-32 lg:px-44 h-[64vh] flex 
+      class="sm:px-10 md:px-32 lg:px-44 h-[92vh] flex 
       flex-col md:flex-row justify-center items-center"
       style={{ backgroundColor: theme === "dark" ? "#111939" : "#476395" }}
     >
